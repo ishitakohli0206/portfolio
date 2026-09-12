@@ -5,6 +5,10 @@ const nextConfig: NextConfig = {
   // deployable `out` directory (including index.html).
   output: "export",
   trailingSlash: true,
+  images: {
+    // Static hosts do not run Next's on-demand image optimization endpoint.
+    unoptimized: true,
+  },
 };
 
 export default nextConfig;

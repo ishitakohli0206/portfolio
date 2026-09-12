@@ -1,6 +1,5 @@
 "use client";
 
-// @ts-expect-error lucide-react types are not available in this project setup
 import { Trophy } from "lucide-react";
 import { achievement } from "@/lib/data";
 import { Reveal } from "@/components/ui/Reveal";

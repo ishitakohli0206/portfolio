@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
 import { ArrowRight, Download, Mail } from "lucide-react";
 import { profile, stats } from "@/lib/data";
 import { Button } from "@/components/ui/Button";
@@ -33,13 +32,12 @@ export function Hero() {
       <HeroBackground />
 
       <div className="container-px relative mx-auto w-full max-w-6xl py-20 md:py-28">
-        <div className="grid items-center gap-12 lg:grid-cols-[minmax(0,1fr)_16rem] lg:gap-16">
-          <motion.div
-            variants={container}
-            initial="hidden"
-            animate="show"
-            className="max-w-3xl"
-          >
+        <motion.div
+          variants={container}
+          initial="hidden"
+          animate="show"
+          className="max-w-3xl"
+        >
           <motion.p
             variants={item}
             className="mb-5 text-sm text-text-muted"
@@ -109,35 +107,7 @@ export function Hero() {
               <Mail size={16} /> {profile.email}
             </a>
           </motion.div>
-          </motion.div>
-
-          <motion.div
-            variants={item}
-            initial="hidden"
-            animate="show"
-            className="relative mx-auto w-56 lg:mx-0 lg:w-72"
-          >
-            <div className="absolute inset-8 scale-110 bg-accent/20 blur-3xl" />
-            <div
-              className="relative aspect-square"
-              style={{
-                maskImage:
-                  "radial-gradient(ellipse 72% 72% at center, black 48%, transparent 100%)",
-                WebkitMaskImage:
-                  "radial-gradient(ellipse 72% 72% at center, black 48%, transparent 100%)",
-              }}
-            >
-              <Image
-                src="/ishita-kohli.jpeg"
-                alt="Ishita Kohli"
-                fill
-                priority
-                sizes="(min-width: 1024px) 18rem, 14rem"
-                className="object-contain"
-              />
-            </div>
-          </motion.div>
-        </div>
+        </motion.div>
 
         <motion.div
           variants={item}

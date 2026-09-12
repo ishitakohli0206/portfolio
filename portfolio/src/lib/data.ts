@@ -6,7 +6,7 @@ export const profile = {
   role: "Full-Stack Engineer",
   positioning: "Full-stack engineer building fast, reliable web systems.",
   intro:
-    "I'm a full-stack engineer focused on React and Node.js, with two production internships behind me building web applications and REST APIs used by real people. I like the backend as much as the interface — query optimization, auth, and the parts that keep an app fast under load.",
+    "I'm a full-stack engineer focused on React and Node.js, with two production internships behind me building web applications and REST APIs used by real people. I like the backend as much as the interface. Query optimization, auth, and the parts that keep an app fast under load.",
   location: "New Delhi, India",
   phone: "+91 9717612075",
   email: "ishitakohli0206@gmail.com",
@@ -119,7 +119,7 @@ export const projects: Project[] = [
     tech: ["React", "Node.js", "Express", "MySQL"],
     description: [
       "Built at B2World (BTOW Pvt. Ltd.) to replace manual attendance and fee tracking with a role-based web platform.",
-      "Designed an RBAC system with 4 roles — admin, teacher, student, parent — including a dedicated parent portal for real-time attendance and fee tracking.",
+      "Designed an RBAC system with 4 roles — admin, teacher, student, parent, including a dedicated parent portal for real-time attendance and fee tracking.",
       "Built an optimized SQL query and indexing strategy supporting 500+ concurrent users with sub-200ms response times.",
     ],
     github: "https://github.com/ishitakohli0206/school-erp",

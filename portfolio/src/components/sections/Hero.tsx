@@ -115,19 +115,26 @@ export function Hero() {
             variants={item}
             initial="hidden"
             animate="show"
-            className="relative mx-auto w-52 lg:mx-0 lg:w-64"
+            className="relative mx-auto w-56 lg:mx-0 lg:w-72"
           >
-            <div className="absolute inset-0 scale-110 rounded-[48%] bg-accent/20 blur-3xl" />
-            <div className="relative aspect-[4/5] overflow-hidden rounded-[48%] shadow-2xl shadow-black/35">
+            <div className="absolute inset-8 scale-110 bg-accent/20 blur-3xl" />
+            <div
+              className="relative aspect-square"
+              style={{
+                maskImage:
+                  "radial-gradient(ellipse 72% 72% at center, black 48%, transparent 100%)",
+                WebkitMaskImage:
+                  "radial-gradient(ellipse 72% 72% at center, black 48%, transparent 100%)",
+              }}
+            >
               <Image
                 src="/ishita-kohli.jpeg"
                 alt="Ishita Kohli"
                 fill
                 priority
-                sizes="(min-width: 1024px) 16rem, 13rem"
-                className="object-cover object-center"
+                sizes="(min-width: 1024px) 18rem, 14rem"
+                className="object-contain"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-bg/25 via-transparent to-white/5" />
             </div>
           </motion.div>
         </div>
